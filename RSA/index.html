@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSA Encryption/Decryption</title>
+    <script src="rsa.js" defer></script>
+  </head>
+  <body>
+    <h2>RSA Encryption/Decryption</h2>
+    <div>
+      <button onclick="generateKeys()">Generate Keys</button>
+    </div>
+    <div>
+      <p>Public Key (e, n): <span id="publicKey"></span></p>
+      <p>Private Key (d, n): <span id="privateKey"></span></p>
+    </div>
+    <div>
+      <h3>Encrypt</h3>
+      <textarea id="plainText" placeholder="Enter text to encrypt"></textarea>
+      <button onclick="encrypt()">Encrypt</button>
+      <p>Encrypted Text: <span id="encryptedText"></span></p>
+    </div>
+    <div>
+      <h3>Decrypt</h3>
+      <textarea id="cipherText" placeholder="Enter text to decrypt"></textarea>
+      <button onclick="decrypt()">Decrypt</button>
+      <p>Decrypted Text: <span id="decryptedText"></span></p>
+    </div>
+  </body>
+</html>
